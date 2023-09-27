@@ -3,7 +3,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Main from './pages/main';
 import Login from './pages/login';
-import User from './pages/user';
 
 const Stack = createStackNavigator();
 
@@ -23,22 +22,10 @@ export default function Routes() {
                     }
                 }}/>
                 <Stack.Screen name="main" component={Main} options={{
-                    title: 'Git VIEWER',
+                    title: 'GEO-LOCALIZAÇÃO',
                     headerTitleAlign: 'center',
                     headerTintColor: '#fff',
                     headerLeft: null,
-                    headerStyle:{
-                        backgroundColor:'#3498db',
-                    },
-                    headerTitleStyle:{
-                        fontWeight: 'bold',
-                        color: '#fff'
-                    }
-                }}/>
-                <Stack.Screen name="user" component={User} options={{
-                    title: 'Perfil de Usuário',
-                    headerTitleAlign: 'center',
-                    headerTintColor: '#fff',
                     headerStyle:{
                         backgroundColor:'#3498db',
                     },
